@@ -1,7 +1,0 @@
-boxes 1.3-1
-googler 4.1-1
-i3lock-fancy-git r176.1734f77-1
-rambox-bin 0.7.5-1
-sublime-text-3-imfix 3.3211-2
-xdg-su 1.2.3-1
-zoom 5.0.408598.0517-1

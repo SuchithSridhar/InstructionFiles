@@ -1,0 +1,38 @@
+Bash scripting 
+
+|| --> run if previous failed
+&& --> run if previous succeed
+
+
+if [ "$EDITOR" = "" ]; then
+	EDITOR=nano
+fi
+
+
+if [ -z "$EDITOR" ]; then
+	EDITOR=nano
+if
+
+[ -z "$EDITOR" ] && EDITOR=nano
+
+[ -d "path/to/folder" ] && folder exists
+
+# note - never do command || command && command 
+# you wont get expected results as if the first command runs then
+# the second commands does not run and the default exit code is 0
+
+sooo always && && && || in scripts
+
+if some_command; then
+    echo command returned true
+else
+    echo command returned some error
+fi
+
+Or to turn that around use ! for negation
+
+if ! some_command; then
+    echo command returned some error
+else
+    echo command returned true
+fi

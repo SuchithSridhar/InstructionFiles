@@ -1,0 +1,8 @@
+download the samsung driver by looking for it on the web
+wget 'http://org.downloadcenter.samsung.com/downloadfile/ContentsFile.aspx?CDSite=UNI_LEVANT&CttFileID=5999976&CDCttType=DR&ModelType=N&ModelName=SL-M2020&VPath=DR/201503/20150311160833703/ULD_v1.00.35.tar.gz'
+
+then unzip the file
+tar zxvf ContentsFile.aspx\?CDSite\=UNI_LEVANT\&CttFileID\=5999976\&CDCttType\=DR\&ModelType\=N\&ModelName\=SL-M2020\&VPath\=DR%2F201503%2F20150311160833703%2FULD_v1.00.35.tar.gz
+
+then install 
+sudo ./uld/install.sh

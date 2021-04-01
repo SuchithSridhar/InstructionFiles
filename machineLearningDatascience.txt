@@ -1,6 +1,0 @@
-machine learning course by andrew ng coursera
-machine learning a-z: hands-on python and r in data science - udemy
-python for data science and machine learning bootcamp - udemy
-Books
-Practical statistics for data scientsists
-data science from scratch

@@ -1,6 +1,0 @@
-pacman-mirrors --fasttrack
-pacman -Syyu
-pacman -S yay
-pacman -S termite picom powerline powerline-fonts brave chromium code xautolock i3 nitrogen noto-fonts-emoji
-lxappearance jdk-openjdk nodejs npm tk filezilla  pa-applet dmenu simplescreenrecorder feh
-yay -S rambox-bin i3lock-fancy-multimonitor
