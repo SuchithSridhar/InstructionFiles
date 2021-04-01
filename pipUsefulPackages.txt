@@ -1,0 +1,9 @@
+grip -> Markdown viewer
+View the file:
+    grip -b file.md
+Export as HTML:
+    grip --export --no-inline file.md
+
+weasyprint -> HTML to pdf converter
+
+

@@ -1,0 +1,26 @@
+changed the number system in "manjaro settings"
+changed the theme in "appearence"
+
+removed that annoying beep sound by running commands:
+	xset -b
+	mousepad ~/.xprofile
+	# that should open the mousepad text editor
+	# add the line 
+	xset -b
+	# to the file and save it.
+	
+To add backlight to keyboard:
+	xset led on
+	[xset led off]
+	
+	
+Different Settings:
+- Settings Manager
+- Setting Editor
+- Manjaro Setting manager
+- Appearence
+- add/remove software
+- pacman
+- file manager prefrences
+- add shortcuts : http://xahlee.info/linux/linux_xfce_keyboard_shortcuts.html
+

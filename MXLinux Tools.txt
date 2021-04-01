@@ -1,0 +1,38 @@
+Mx Tools:
+
+- Live:
+Live USB Maker
+Snapshot
+
+- Maintenance:
+Chroot Rescue Scan
+Boot Options
+Boot Repair
+Clean up
+Menu Editor
+User Manager
+
+- Setup:
+Bash Config
+Nvidia driver installer
+Codecs Installer
+Conky
+Date and time
+Network Assistance
+Select Sound
+System Sounds
+Brightness Systray
+Tweaks
+Welcome
+System Keyboard
+System Locales
+
+- Software:
+Fix GPG keys
+Package Installer
+Repo Manager
+
+- Utilities:
+Quick System info
+format USB
+iDeviceMounter

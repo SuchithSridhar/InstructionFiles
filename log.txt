@@ -1,0 +1,8 @@
+installed "live server" on OSS code
+installed an emoji font: noto-fonts-emoji
+installed youtube-dl to download music from youtube, works for video too.
+learning neovim as a text editor
+downloaded ranger and the terminal webbrowser w3m so that 
+ranger and use its image displayer and show image preview.
+added set preview_image true to .config/ranger/rc.conf
+Created backup and updated system on 02.06.2020 (490 packages updates)

@@ -1,0 +1,63 @@
+Although this is a linux advantages file let's talk about the disadvantages for linux first
+the main disavantages of changing to linux: 
+
+- Absence of perticular software in linux:
+so the entire microsoft office suite and the adobe suite are unavailable on linux. You can
+use the web versions of mircosoft office or use libra or open office but that's not the same
+and that might be a deal breaker.
+
+- A learning curve and time to understand the system
+It's going to take time for you to learn how to use this operating system, you need to give it
+time before it can start benefitting you. And you'll have to relearn things in the OS which will
+affect how much time you take to do basic tasks. A simple example for this is:
+When I used to scan documents in windows it would take me about 5mins each time, going through all
+the clicking and graphical user interface. The first time i scanned a doucment in linux it took me about
+30mins. That's because it takes effort to setup something in linux and you'll spend time just setting it up
+the way you want and making sure everything works. However... now... for me to scan a document it takes me
+less than a minute! I know that all I need to do is run this one command: $hp-scan mode=color
+I can set everything i want from there! AND if I want to scan 20 documents one after the other then in windows
+you'd have to either set up an ahk script or you'd have to manually click so many buttons. but in linux... all i
+would do is: $ for i in {1..20}; do; hp-scan mode=color; done; and that would do that...
+
+Do note these 2 key disavantages of changing to linux. A very import point I'd like to point out is that these two are
+disadvantages of CHANGING to linux and not inheriently of linux. It's the fact that you are not used to it so and it
+invloves a learning curve and you've been using windows for years.
+
+That being said let's talk about why linux increases your effeciency especially if you aren't scared of computers and
+learning new and possibly different things. Knowing how to code really helps when you start using linux.
+
+Advantages of Linux:
+
+- The Terminal: The terminal of linux or the unix terminal. Why this is an advantage even through you have things like
+windows power shell and command prompt is the fact that linux encourages you to use the terminal and you can do almost
+anything you want in the terminal! YOU have web browser that work in linux! You have photo editors in the terminal...
+And its easy to take the output of one and pipe it into another. Its easy to script things since its all commands and the
+output is standardized. I can't explain how awesome the terminal is awesome untill you've used it.
+
+- Automation: In windows you have this amazing program called autohotkey (ahk) which is such an amazing tool to automate
+almost anything that you want on the computer. But in linux... you don't have to learn a different language and something
+nearly as complicated as ahk. Ahk is not standardized so its harder to learn the language. Linux due to all the command
+line applications and bash its so easy to write a script and since everything is so open and you can use it the way you
+want to use it... Scriting is inherient in the process.
+
+- Workspaces: This is one of the main reasons that linux makes you very effecient. If you set it up in a way that you want
+you can get so much out of workspaces. Windows does have workspaces but its just introduced and its not as controlable as
+in linux and tiling also is something new in windows and so its gonna take time before it matures into something that's
+actually good.
+
+- Control: This is honeslty the reason that linux is so attractive to everyone that comes here and this is the reason that
+most people who say linux is not good. Let me explain why I say this. IF you are the kind of person that is not afraid to
+learn something new and make it your own and make it exactly what you want. But this is the problem for people who aren't
+super into computer and aren't into putting in effort to understand something or is just looking for something to get it
+done with and you don't want to have to spend anytime and its a one time thing... linux is not good for you... but if you
+use your computer more often than not then linux is almost guaranteed to make you more efficiency. 
+
+- Learning: The things you learn about your computer just trying to set linux up and just exploring is a lot more than what
+you learn when you use windows. When you use linux you're more exposed to how things work since the operating system isn't
+trying to hid all that from you in all the forms. There are versions of linux which are super seemless like windows but
+if you are trying to learn things then linux certainly makes it easier and provides more exposure.
+You can install vanilla arch and you'll understand all the things about mount points languages booting system and whatnot
+you can't do that with windows in the same way.
+
+- Easy Package manager: Its in the name, installing software on linux is a lot safer and a lot easier than windows. Windows
+has 3rd party package managers but all of them require setup and aren't as flawless.

@@ -1,0 +1,11 @@
+- gitlet init
+
+Section: 
+Staged:
+    Staged for removal and staged for addition
+Commits:
+    initial commit
+
+the contents of a file is called the blob and store the in the blobs
+section. 
+

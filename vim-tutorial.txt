@@ -1,0 +1,78 @@
+:q - quit
+:q! - quit without save
+:wq - quit with save
+
+x - delete char
+i - insert mode
+A - append text at the end of line
+a - append text after current char
+o - new line under cursor (open command)
+O - new line above cursor
+
+u - undo
+U - undo all operations onto this line
+ctrl+r - redo
+
+
+dd - delete line
+(2dd - delete two lines)
+
+operator [number] motion
+
+operations:
+d - delete
+y - yank (copy)
+p - paste
+c - change 
+
+motions:
+w - till next word excluding first char
+e - end of current word
+$ - line end
+0 - start of line
+
+gg - start of file
+G - end of file
+<number>G - go to line
+
+ctrl+G - display info about the file/line
+
+rx - replace after deleting letter
+
+/ - search command
+/<word to find>
+n - next
+N - previous
+
+:s - substitute command
+:s/old/new/g
+g - end of file, can be any other ref.
+
+:#,# s/old/new/g - replace between 2 lines (# - line num)
+:s/old/new/gc - with confirmation each time
+
+
+:!<bash command> - execte bash commands
+
+
+v - enter visual mode
+
+once selected you can perform actions on the selected
+text like writing the selected text to a file.
+eg: v >> select lines to write to different file >>
+:w newfile.txt 
+
+:r - retrive and merge files
+:r file_name.txt
+:r !<bash command> - this puts the output under the cursork
+
+R - replace mode basically overwrite and not insert
+lesson 6.2 last lesson
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+# list partitions
+sudo fdisk -l
+
+# encrypt the partition
+sudo cryptsetup --verbose --verify-passphrase luksFormat /dev/sdb1
+
+# Open the encrypted partition
+sudo cryptsetup luksOpen /dev/sdb1 sdb1
+# the last argument is just an arbitary name
+# this is mapped to /dev/mapper/sdb1
+
+sudo cryptsetup luksOpen /dev/sdb1 home
+# this would be mapped to /dev/mapper/home
+
+# list partitions
+sudo fdisk -l
+
+# make the filesystem
+sudo mkfs.ext4 /dev/mapper/sdb1
+
+# remove reserved spaced if OS not on this partition
+sudo tune2fs -m 0 /dev/mapper/sdb1
+
+# ---- SETUP COMPLETED ----
+
+# open it
+sudo cryptsetup luksOpen /dev/sdb1 sdb1
+
+# mount it
+sudo mount /dev/mapper/sdb1 /mnt/part1
+
+# unmount it
+sudo umount /dev/mapper/sdb1
+
+# close it
+sudo cryptsetup luksClose sdb1
+

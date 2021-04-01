@@ -1,0 +1,6 @@
+this is still being tested but trying this:
+echo 60 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold
+
+to persist it:
+@reboot root echo 60 > /sys/class/power_supply/BAT0/charge_control_end_threshold
+to my /etc/crontab.

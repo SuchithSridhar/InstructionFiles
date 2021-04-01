@@ -1,0 +1,2 @@
+wmic csproduct get name - display the name of the computer
+

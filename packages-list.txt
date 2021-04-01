@@ -1,0 +1,71 @@
+--- Presettings ---
+
+pacman-mirrors --fasttrack
+pacman -Syyu
+pacman -S yay
+
+--- pacman ---
+
+ctags
+bashtop
+hardinfo
+termite
+neofetch
+i3-gaps
+polybar
+dmenu
+nitrogen
+brave
+chromium
+dunst
+code
+xclip
+polybar
+picom
+powerline
+powerline-fonts
+lxappearance
+arandr
+xautolock
+tree
+tk
+npm
+filezilla
+youtube-dl
+nodejs
+noto-fonts-emoji
+pa-applet
+simplescreenrecorder
+feh
+cpu-x
+w3m
+fzf
+ranger
+neovim
+cmatrix
+kdenlive
+mpd
+ncmpcpp
+mpc
+ario
+xorg-xev 
+xournalpp
+
+--- yay ---
+
+optimus-manager
+optimus-manager-qt
+rambox
+i3lock-fancy-multimonitor
+teams
+zoom
+cava
+rogauracore-git
+i-nex
+phoronix-test-suite pfetch
+foxitreader
+pfetch
+pacman4console
+rogauracore
+mine-time
+googler

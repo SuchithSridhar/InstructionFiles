@@ -1,0 +1,75 @@
+-Installed Manjaro
+
+- sudo pacman-mirrors --fasttrack
+# tests all the mirrors and sets the fastest one as the default
+
+- sudo pacman -Syyu
+# update linux (everything)
+
+- sudo pacman -S giflib lib32-giflib libpng 
+lib32-libpng libldap lib32-libldap gnutls 
+lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal 
+v4l-utils lib32-v4l-utils libpulse lib32-libpulse 
+alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib 
+libjpeg-turbo lib32-libjpeg-turbo libxcomposite 
+lib32-libxcomposite libxinerama lib32-libxinerama 
+ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader 
+libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 
+gst-plugins-base-libs lib32-gst-plugins-base-libs 
+vulkan-icd-loader lib32-vulkan-icd-loader cups samba dosbox
+# These are common discrepencies
+
+- sudo pamac install manjaro-printer
+- sudo gpasswd -a suchithsridhar sys
+- sudo systemctl enable --now org.cupsd.service
+# Printer set-up
+
+- Right-click date and change format to:
+%a %d %b, %r
+# Change the format of the date
+
+- pip install numpy tkcalendar scipy matplotlib django 
+scikitlearn auto-py-to-exe
+# Install python packages
+
+- pamac install audacity code
+
+- sudo cat /boot/grub/grub.cfg
+# find the windows name in here and copy it (Windows Boot Manager (on /dev/sda2))
+
+- sudo nano /etc/default/grub
+GRUB_DEFAULT = "{Name of windows bootloader}"
+GRUB_TIMEOUT = 1
+---
+CTRL+O to save
+CTRL+X to exit
+---
+- sudo update-grub
+# Make windows the default boot system
+
+- cat /proc/sys/vm/swappiness
+# should be 60 - the amount of hard disk used for ram
+
+- sudo nano /etc/sysctl.d/100-manjaro.conf
+vm.swappiness=10
+---
+CTRL+O to save
+CTRL+X to exit
+
+- sudo pacman -S aspell-en libmythes mythes-en languagetool
+# Better spell checker
+
+- pamac install "ttf-ms-fonts"
+# Windows fonts like Arial, Times New Roman..
+
+[enable trim for ssd - https://averagelinuxuser.com/10-things-to-do-after-installing-manjaro/]
+
+- sudo systemctl --failed
+# check for errors
+
+- sudo journalctl -p 3 -xb
+# check for errors
+
+
+
+

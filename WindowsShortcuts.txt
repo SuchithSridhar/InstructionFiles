@@ -1,0 +1,60 @@
+win + q = search bar windows
+win + a = show notification panel
+win + z = 
+win + w = whiteboard / full screen snip
+win + s = search bar for winodws
+win + x = start menu advanced
+win + e = file explorer
+win + d = desktop
+win + c = cortana
+win + r = run prompt
+win + f = feedback hub
+win + v = clipboard options
+win + t = select from task bar
+win + g = xbox game bar
+win + b = hidden icons
+win + y = 
+win + h = dictation
+win + n = 
+win + u = opens settings (ease of access)
+win + j = 
+win + m = minimize
+win + i = account settings
+win + k = connect to devices quick settings
+win + o = 
+win + l = lock screen
+win + p = project quick settings
+
+win + , = show desktop until held
+win + + = magnifier
+win + . = emoji bar
+win + ; = emoji bar
+win + num = window in the taskbar numbered started from 1
+
+win + shift + s = snipping tool
+win + shift + t = same as win + t
+
+
+win + ctrl + q = quick assist
+win + ctrl + s = speech recognition
+win + ctrl + d = new desktop
+win + ctrl + f = find in directory (disabled)
+win + ctrl + n = narrator settings
+win + ctrl + m = magnifier settings
+win + ctrl + o = onscreen keyboard
+win + ctrl + l = lock screen
+win + ctrl + arrow key = change desktop
+
+
+win + alt + r = start/stop recording screen
+win + alt + m = mute/unmute microphone while recording
+win + alt + prtscn = take screenshot
+win + alt + d = expands date
+win + alt + f = feedback
+win + alt + g = wierd game bar
+win + alt + b = gamebar broadcasting
+win + alt + num = win options in taskbar
+
+custom shortcuts:
+
+ctrl + alt + r = rambox

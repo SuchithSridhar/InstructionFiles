@@ -1,0 +1,632 @@
+[suchithsridhar@suchithsridhar-pc ~]$ pacman
+error: no operation specified (use -h for help)
+[suchithsridhar@suchithsridhar-pc ~]$ pacman -
+error: argument '-' specified without input on stdin
+[suchithsridhar@suchithsridhar-pc ~]$ pacman -h
+usage:  pacman <operation> [...]
+operations:
+    pacman {-h --help}
+    pacman {-V --version}
+    pacman {-D --database} <options> <package(s)>
+    pacman {-F --files}    [options] [package(s)]
+    pacman {-Q --query}    [options] [package(s)]
+    pacman {-R --remove}   [options] <package(s)>
+    pacman {-S --sync}     [options] [package(s)]
+    pacman {-T --deptest}  [options] [package(s)]
+    pacman {-U --upgrade}  [options] <file(s)>
+
+use 'pacman {-h --help}' with an operation for available options
+[suchithsridhar@suchithsridhar-pc ~]$ sudo pacman-mirrors --fasttrack
+[sudo] password for suchithsridhar: 
+Sorry, try again.
+[sudo] password for suchithsridhar: 
+::INFO Downloading mirrors from repo.manjaro.org
+::INFO Using default mirror file
+::INFO Querying mirrors - This may take some time
+  ..... Chile          : http://manjaro.dcc.uchile.cl/
+  ..... Chile          : https://mirror.ufro.cl/manjaro/
+  2.019 Poland         : https://mirror.tuchola-dc.pl/manjaro/
+  2.502 Sweden         : https://ftp.lysator.liu.se/pub/manjaro/
+  ..... Sweden         : ftp://ftp.lysator.liu.se/pub/manjaro/
+  1.750 Australia      : http://manjaro.mirror.serversaustralia.com.au/
+  1.855 France         : https://manjaro.ynh.ovh/
+  ..... New_Zealand    : http://manjaro.mirrors.theom.nz/
+  1.455 Germany        : https://manjaro.moson.org/
+  0.751 Germany        : http://manjaro.moson.org/
+  2.660 United_States  : https://repo.ialab.dsu.edu/manjaro/
+  1.312 United_States  : http://repo.ialab.dsu.edu/manjaro/
+  1.829 France         : http://kibo.remi.lu/
+  ..... Taiwan         : http://free.nchc.org.tw/manjaro/
+  1.223 Belgium        : http://ftp.belnet.be/mirrors/manjaro/
+  1.893 Belgium        : ftp://ftp.belnet.be/mirrors/manjaro/
+  ..... United_Kingdom : http://repo.manjaro.org.uk/
+
+::ERROR timed out 'http://repo.manjaro.org.uk/'
+
+  1.321 Germany        : https://mirror.netzspielplatz.de/manjaro/packages/
+  2.443 Hungary        : https://nova.quantum-mirror.hu/mirrors/pub/manjaro/
+  1.055 Hungary        : http://nova.quantum-mirror.hu/mirrors/pub/manjaro/
+  0.982 Denmark        : https://mirrors.dotsrc.org/manjaro/
+  1.654 Hungary        : https://quantum-mirror.hu/mirrors/pub/manjaro/
+  1.232 Hungary        : http://quantum-mirror.hu/mirrors/pub/manjaro/
+  1.419 Sweden         : https://mirror.zetup.net/manjaro/
+  1.297 Germany        : https://ftp.halifax.rwth-aachen.de/manjaro/
+  1.949 Germany        : ftp://ftp.halifax.rwth-aachen.de/manjaro/
+  0.978 Germany        : https://mirror.23media.com/manjaro/
+  0.792 Germany        : http://mirror.23media.com/manjaro/
+  1.148 Russia         : https://mirror.yandex.ru/mirrors/manjaro/
+  1.277 Bulgaria       : https://manjaro.ipacct.com/manjaro/
+  1.464 France         : https://manjaro.mcofficer.me/
+  ..... South_Korea    : https://mirror.d-tl.com/manjaro/
+  2.514 United_States  : https://mirror.math.princeton.edu/pub/manjaro/
+  1.169 United_Kingdom : http://mirror.catn.com/pub/manjaro/
+  1.406 United_Kingdom : http://manjaro.mirrors.uk2.net/
+  1.946 South_Africa   : http://mirror.is.co.za/mirrors/manjaro.org/
+  2.606 Singapore      : https://download.nus.edu.sg/mirror/manjaro/
+  1.499 Germany        : https://manjaro.moson.eu/
+  0.774 Germany        : http://manjaro.moson.eu/
+  1.513 Austria        : http://mirror.easyname.at/manjaro/
+  1.936 Austria        : ftp://mirror.easyname.at/manjaro/
+  1.215 Germany        : https://mirror.alpix.eu/manjaro/
+  1.132 Germany        : http://mirror.ragenetwork.de/manjaro/
+  1.684 Indonesia      : https://mirror.deace.id/manjaro/
+  1.235 Indonesia      : http://mirror.deace.id/manjaro/
+  ..... South_Africa   : http://manjaro.mirror.ac.za/
+  1.534 Switzerland    : https://manjaro.osmir.ch/
+  0.822 Switzerland    : http://manjaro.osmir.ch/
+  1.301 Belgium        : https://mirror.futureweb.be/manjaro/
+  0.935 Belgium        : http://mirror.futureweb.be/manjaro/
+  ..... Ukraine        : http://mirrors.colocall.net/manjaro/
+  ..... Ukraine        : ftp://mirrors.colocall.net/manjaro/
+  ..... Japan          : http://ftp.tsukuba.wide.ad.jp/Linux/manjaro/
+  3.413 Costa_Rica     : https://mirrors.ucr.ac.cr/manjaro/
+  2.222 Canada         : https://osmirror.org/manjaro/
+  ..... Bulgaria       : http://manjaro.telecoms.bg/
+  1.987 Indonesia      : http://kartolo.sby.datautama.net.id/manjaro/
+  3.123 Brazil         : https://www.caco.ic.unicamp.br/manjaro/
+::INFO Writing mirror list
+::Germany         : https://manjaro.moson.org/stable
+::Germany         : https://manjaro.moson.eu/stable
+::Germany         : https://mirror.23media.com/manjaro/stable
+::Switzerland     : https://manjaro.osmir.ch/stable
+::Belgium         : https://mirror.futureweb.be/manjaro/stable
+::Denmark         : https://mirrors.dotsrc.org/manjaro/stable
+::Hungary         : https://nova.quantum-mirror.hu/mirrors/pub/manjaro/stable
+::Germany         : http://mirror.ragenetwork.de/manjaro/stable
+::Russia          : https://mirror.yandex.ru/mirrors/manjaro/stable
+::United_Kingdom  : http://mirror.catn.com/pub/manjaro/stable
+::Germany         : https://mirror.alpix.eu/manjaro/stable
+::Hungary         : https://quantum-mirror.hu/mirrors/pub/manjaro/stable
+::Indonesia       : https://mirror.deace.id/manjaro/stable
+::Bulgaria        : https://manjaro.ipacct.com/manjaro/stable
+::United_States   : https://repo.ialab.dsu.edu/manjaro/stable
+::Germany         : https://mirror.netzspielplatz.de/manjaro/packages/stable
+::United_Kingdom  : http://manjaro.mirrors.uk2.net/stable
+::Sweden          : https://mirror.zetup.net/manjaro/stable
+::France          : https://manjaro.mcofficer.me/stable
+::Australia       : http://manjaro.mirror.serversaustralia.com.au/stable
+::France          : http://kibo.remi.lu/stable
+::France          : https://manjaro.ynh.ovh/stable
+::Belgium         : http://ftp.belnet.be/mirrors/manjaro/stable
+::Austria         : http://mirror.easyname.at/manjaro/stable
+::South_Africa    : http://mirror.is.co.za/mirrors/manjaro.org/stable
+::Germany         : https://ftp.halifax.rwth-aachen.de/manjaro/stable
+::Indonesia       : http://kartolo.sby.datautama.net.id/manjaro/stable
+::Ukraine         : http://mirrors.colocall.net/manjaro/stable
+::Poland          : https://mirror.tuchola-dc.pl/manjaro/stable
+::Sweden          : https://ftp.lysator.liu.se/pub/manjaro/stable
+::Taiwan          : http://free.nchc.org.tw/manjaro/stable
+::Canada          : https://osmirror.org/manjaro/stable
+::United_States   : https://mirror.math.princeton.edu/pub/manjaro/stable
+::Singapore       : https://download.nus.edu.sg/mirror/manjaro/stable
+::Brazil          : https://www.caco.ic.unicamp.br/manjaro/stable
+::Japan           : http://ftp.tsukuba.wide.ad.jp/Linux/manjaro/stable
+::Bulgaria        : http://manjaro.telecoms.bg/stable
+::Costa_Rica      : https://mirrors.ucr.ac.cr/manjaro/stable
+::South_Africa    : http://manjaro.mirror.ac.za/stable
+::Chile           : http://manjaro.dcc.uchile.cl/stable
+::New_Zealand     : http://manjaro.mirrors.theom.nz/stable
+::South_Korea     : https://mirror.d-tl.com/manjaro/stable
+::Chile           : https://mirror.ufro.cl/manjaro/stable
+::INFO Mirror list generated and saved to: /etc/pacman.d/mirrorlist
+[suchithsridhar@suchithsridhar-pc ~]$ sudo pacman -Syu
+:: Synchronizing package databases...
+ core                  169.2 KiB   394 KiB/s 00:00 [######################] 100%
+ extra                1984.6 KiB  1308 KiB/s 00:02 [######################] 100%
+ community               5.8 MiB  1210 KiB/s 00:05 [######################] 100%
+ multilib              193.3 KiB   397 KiB/s 00:00 [######################] 100%
+:: Starting full system upgrade...
+:: Replace alacritty-terminfo with core/ncurses? [Y/n] n
+resolving dependencies...
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: bashrc-manjaro will be installed before its bash dependency
+
+Packages (177) alsa-lib-1.2.2-1  alsa-oss-1.1.8-3  alsa-plugins-1.2.2-1
+               alsa-topology-conf-1.2.2-1  alsa-ucm-conf-1.2.2-1
+               alsa-utils-1.2.2-1  aom-1.0.0.errata1+avif-1
+               appstream-glib-0.7.17-1  asar-2.1.0-1  audacity-1:2.3.3-2
+               autoconf-2.69-7  avahi-0.8+6+g751be80-1  bash-5.0.016-1
+               bashrc-manjaro-5.0.016-1  binutils-2.34-1.1  bison-3.5.2-1
+               bluez-5.53-1  bluez-libs-5.53-1  brave-1.4.95-1
+               ca-certificates-mozilla-3.50-1  catfish-1.4.13-2
+               chromium-80.0.3987.122-1  code-1.42.1-1  cpupower-5.5-1
+               cups-filters-1.27.1-1  desktop-file-utils-0.24-2
+               dhclient-4.4.2-2  electron-8.0.1-1  etcher-1.5.79-1
+               ffmpeg-1:4.2.2-3  file-roller-3.32.4-1  firefox-73.0.1-1
+               flatpak-1.6.2-1  fluidsynth-2.1.1-1  gcc-9.2.1+20200130-2
+               gcc-libs-9.2.1+20200130-2  gdk-pixbuf2-2.40.0-2  gegl-0.4.22-1
+               gimp-2.10.18-2  git-2.25.1-1  glib2-2.62.5-1
+               glib2-docs-2.62.5-1  glibc-2.31-1  gmp-6.2.0-1
+               gnome-desktop-1:3.34.4-1  gptfdisk-1.0.5-1
+               gst-plugins-bad-1.16.2-3
+               gtk-update-icon-cache-1:3.24.14+9+g429a6287e0-1  gtk2-2.24.32-2
+               gtk3-1:3.24.14+9+g429a6287e0-1  gvfs-1.42.2-2  gvfs-afc-1.42.2-2
+               gvfs-gphoto2-1.42.2-2  gvfs-mtp-1.42.2-2  gvfs-nfs-1.42.2-2
+               gvfs-smb-1.42.2-2  http-parser-2.9.3-1  hwids-20200204-1
+               imagemagick-7.0.9.26-1  js60-60.9.0-2
+               kaccounts-integration-19.12.2-2  kernel-alive-0.5-1
+               kitty-terminfo-0.16.0-2  lib32-alsa-lib-1.2.2-1
+               lib32-alsa-oss-1.1.8-2  lib32-alsa-plugins-1.2.2-1
+               lib32-fluidsynth-2.1.1-1  lib32-gcc-libs-9.2.1+20200130-2
+               lib32-glib2-2.62.5-1  lib32-glibc-2.31-1  lib32-gnutls-3.6.12-1
+               lib32-gtk3-3.24.14-1  lib32-icu-65.1-3  lib32-libgusb-0.3.4-1
+               lib32-libidn2-2.3.0-1  lib32-libinstpatch-1.1.3-1
+               lib32-libsndfile-1.0.28-3  lib32-libva-mesa-driver-19.3.4-3
+               lib32-libxkbcommon-0.10.0-1  lib32-mesa-19.3.4-3
+               lib32-mesa-vdpau-19.3.4-3  lib32-nss-3.50-1
+               lib32-pango-1:1.44.7+11+g73b46b04-1  lib32-vulkan-intel-19.3.4-3
+               lib32-vulkan-radeon-19.3.4-3  lib32-wayland-1.18.0-1
+               lib32-zstd-1.4.4-2  libarchive-3.4.2-1  libbytesize-2.2-1
+               libcap-2.31-1  libetonyek-0.1.9-2  libgee-0.20.3-1
+               libgpg-error-1.37-1  libgusb-0.3.4-1  libibus-1.5.22-1
+               libinput-1.15.2-1  libinstpatch-1.1.3-1  libkate-0.4.1-7
+               libldap-2.4.49-1  libmm-glib-1.12.6-1  libnm-1.22.8-1
+               libquicktime-1.2.4-22  libreoffice-still-6.3.5-1
+               libtool-2.4.6+42+gb88cebd5-10  libusb-compat-0.1.7-1
+               libusbmuxd-2.0.1-1  libva-mesa-driver-19.3.4-2
+               libwnck3-3.32.0-3  light-locker-1.9.0-2
+               linux-api-headers-5.4.17-1
+               linux-firmware-20200224.r1582.efcfa03-1  linux54-5.4.22-1
+               lua-5.3.5-3  man-pages-5.05-1  manjaro-release-19.0.1-1
+               md4c-0.4.3-1  mesa-19.3.4-2  mesa-vdpau-19.3.4-2
+               metis-5.1.0.p8-1  mlt-6.20.0-2  modemmanager-1.12.6-1
+               nano-4.8-1  ncurses-6.2-1  networkmanager-1.22.8-1
+               nfs-utils-2.4.3-2  nfsidmap-2.4.3-2  nodejs-13.9.0-1
+               npm-6.13.7-1  nss-3.50-1  ntfs-3g-2017.3.23-4  ntp-4.2.8.p13-3
+               openexr-2.4.1-2  openssh-8.2p1-3
+               opera-ffmpeg-codecs-79.0.3945.130-2
+               pango-1:1.44.7+11+g73b46b04-1  perl-alien-build-2.08-1
+               perl-http-daemon-6.06-1  perl-path-tiny-0.112-1
+               perl-xml-parser-2.46-1  pipewire-0.2.7-2  polkit-0.116-4.1
+               protobuf-3.11.4-1  protobuf-c-1.3.3-1  python-cairo-1.19.1-1
+               python-idna-2.9-1  python-lxml-4.5.0-1
+               python-more-itertools-8.2.0-1  python-packaging-20.1-1
+               python-pep517-0.8.1-1  python-pip-19.3.1-1
+               python-psutil-5.7.0-1  python-requests-2.23.0-1
+               python-setuptools-1:45.2.0-1  python-toml-0.10.0-3
+               python-zipp-3.0.0-1  python2-psutil-5.7.0-1  qt5-base-5.14.1-2
+               readline-8.0.004-1  semver-7.1.3-1  signon-ui-0.17+20171022-2
+               snapd-2.43.3-2  suitesparse-5.7.1-1  thunderbird-68.5.0-1
+               timeshift-19.08.1.r53.g8e51d05-1  ttf-liberation-2.1.0-1
+               udisks2-2.8.4-2  vlc-3.0.8-10  vulkan-intel-19.3.4-2
+               vulkan-radeon-19.3.4-2  wayland-1.18.0-1  webkit2gtk-2.26.4-1
+               wpebackend-fdo-1.4.1-1  xdg-utils-1.1.3+19+g9816ebb-1
+               xfce4-weather-plugin-0.10.1-1  xfce4-whiskermenu-plugin-2.4.2-2
+               xorg-xkbcomp-1.4.3-1  zsh-5.8-1
+
+Total Installed Size:  4205.15 MiB
+Net Upgrade Size:        25.69 MiB
+
+:: Proceed with installation? [Y/n] n
+[suchithsridhar@suchithsridhar-pc ~]$ sudo pacman -Syyu
+:: Synchronizing package databases...
+ core                  169.2 KiB   273 KiB/s 00:01 [######################] 100%
+ extra                1984.6 KiB   450 KiB/s 00:04 [######################] 100%
+ community               5.8 MiB   294 KiB/s 00:20 [######################] 100%
+ multilib              193.3 KiB   273 KiB/s 00:01 [######################] 100%
+:: Starting full system upgrade...
+:: Replace alacritty-terminfo with core/ncurses? [Y/n] 
+resolving dependencies...
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: bashrc-manjaro will be installed before its bash dependency
+
+Packages (178) alacritty-terminfo-0.4.1-1 [removal]  alsa-lib-1.2.2-1
+               alsa-oss-1.1.8-3  alsa-plugins-1.2.2-1
+               alsa-topology-conf-1.2.2-1  alsa-ucm-conf-1.2.2-1
+               alsa-utils-1.2.2-1  aom-1.0.0.errata1+avif-1
+               appstream-glib-0.7.17-1  asar-2.1.0-1  audacity-1:2.3.3-2
+               autoconf-2.69-7  avahi-0.8+6+g751be80-1  bash-5.0.016-1
+               bashrc-manjaro-5.0.016-1  binutils-2.34-1.1  bison-3.5.2-1
+               bluez-5.53-1  bluez-libs-5.53-1  brave-1.4.95-1
+               ca-certificates-mozilla-3.50-1  catfish-1.4.13-2
+               chromium-80.0.3987.122-1  code-1.42.1-1  cpupower-5.5-1
+               cups-filters-1.27.1-1  desktop-file-utils-0.24-2
+               dhclient-4.4.2-2  electron-8.0.1-1  etcher-1.5.79-1
+               ffmpeg-1:4.2.2-3  file-roller-3.32.4-1  firefox-73.0.1-1
+               flatpak-1.6.2-1  fluidsynth-2.1.1-1  gcc-9.2.1+20200130-2
+               gcc-libs-9.2.1+20200130-2  gdk-pixbuf2-2.40.0-2  gegl-0.4.22-1
+               gimp-2.10.18-2  git-2.25.1-1  glib2-2.62.5-1
+               glib2-docs-2.62.5-1  glibc-2.31-1  gmp-6.2.0-1
+               gnome-desktop-1:3.34.4-1  gptfdisk-1.0.5-1
+               gst-plugins-bad-1.16.2-3
+               gtk-update-icon-cache-1:3.24.14+9+g429a6287e0-1  gtk2-2.24.32-2
+               gtk3-1:3.24.14+9+g429a6287e0-1  gvfs-1.42.2-2  gvfs-afc-1.42.2-2
+               gvfs-gphoto2-1.42.2-2  gvfs-mtp-1.42.2-2  gvfs-nfs-1.42.2-2
+               gvfs-smb-1.42.2-2  http-parser-2.9.3-1  hwids-20200204-1
+               imagemagick-7.0.9.26-1  js60-60.9.0-2
+               kaccounts-integration-19.12.2-2  kernel-alive-0.5-1
+               kitty-terminfo-0.16.0-2  lib32-alsa-lib-1.2.2-1
+               lib32-alsa-oss-1.1.8-2  lib32-alsa-plugins-1.2.2-1
+               lib32-fluidsynth-2.1.1-1  lib32-gcc-libs-9.2.1+20200130-2
+               lib32-glib2-2.62.5-1  lib32-glibc-2.31-1  lib32-gnutls-3.6.12-1
+               lib32-gtk3-3.24.14-1  lib32-icu-65.1-3  lib32-libgusb-0.3.4-1
+               lib32-libidn2-2.3.0-1  lib32-libinstpatch-1.1.3-1
+               lib32-libsndfile-1.0.28-3  lib32-libva-mesa-driver-19.3.4-3
+               lib32-libxkbcommon-0.10.0-1  lib32-mesa-19.3.4-3
+               lib32-mesa-vdpau-19.3.4-3  lib32-nss-3.50-1
+               lib32-pango-1:1.44.7+11+g73b46b04-1  lib32-vulkan-intel-19.3.4-3
+               lib32-vulkan-radeon-19.3.4-3  lib32-wayland-1.18.0-1
+               lib32-zstd-1.4.4-2  libarchive-3.4.2-1  libbytesize-2.2-1
+               libcap-2.31-1  libetonyek-0.1.9-2  libgee-0.20.3-1
+               libgpg-error-1.37-1  libgusb-0.3.4-1  libibus-1.5.22-1
+               libinput-1.15.2-1  libinstpatch-1.1.3-1  libkate-0.4.1-7
+               libldap-2.4.49-1  libmm-glib-1.12.6-1  libnm-1.22.8-1
+               libquicktime-1.2.4-22  libreoffice-still-6.3.5-1
+               libtool-2.4.6+42+gb88cebd5-10  libusb-compat-0.1.7-1
+               libusbmuxd-2.0.1-1  libva-mesa-driver-19.3.4-2
+               libwnck3-3.32.0-3  light-locker-1.9.0-2
+               linux-api-headers-5.4.17-1
+               linux-firmware-20200224.r1582.efcfa03-1  linux54-5.4.22-1
+               lua-5.3.5-3  man-pages-5.05-1  manjaro-release-19.0.1-1
+               md4c-0.4.3-1  mesa-19.3.4-2  mesa-vdpau-19.3.4-2
+               metis-5.1.0.p8-1  mlt-6.20.0-2  modemmanager-1.12.6-1
+               nano-4.8-1  ncurses-6.2-1  networkmanager-1.22.8-1
+               nfs-utils-2.4.3-2  nfsidmap-2.4.3-2  nodejs-13.9.0-1
+               npm-6.13.7-1  nss-3.50-1  ntfs-3g-2017.3.23-4  ntp-4.2.8.p13-3
+               openexr-2.4.1-2  openssh-8.2p1-3
+               opera-ffmpeg-codecs-79.0.3945.130-2
+               pango-1:1.44.7+11+g73b46b04-1  perl-alien-build-2.08-1
+               perl-http-daemon-6.06-1  perl-path-tiny-0.112-1
+               perl-xml-parser-2.46-1  pipewire-0.2.7-2  polkit-0.116-4.1
+               protobuf-3.11.4-1  protobuf-c-1.3.3-1  python-cairo-1.19.1-1
+               python-idna-2.9-1  python-lxml-4.5.0-1
+               python-more-itertools-8.2.0-1  python-packaging-20.1-1
+               python-pep517-0.8.1-1  python-pip-19.3.1-1
+               python-psutil-5.7.0-1  python-requests-2.23.0-1
+               python-setuptools-1:45.2.0-1  python-toml-0.10.0-3
+               python-zipp-3.0.0-1  python2-psutil-5.7.0-1  qt5-base-5.14.1-2
+               readline-8.0.004-1  semver-7.1.3-1  signon-ui-0.17+20171022-2
+               snapd-2.43.3-2  suitesparse-5.7.1-1  thunderbird-68.5.0-1
+               timeshift-19.08.1.r53.g8e51d05-1  ttf-liberation-2.1.0-1
+               udisks2-2.8.4-2  vlc-3.0.8-10  vulkan-intel-19.3.4-2
+               vulkan-radeon-19.3.4-2  wayland-1.18.0-1  webkit2gtk-2.26.4-1
+               wpebackend-fdo-1.4.1-1  xdg-utils-1.1.3+19+g9816ebb-1
+               xfce4-weather-plugin-0.10.1-1  xfce4-whiskermenu-plugin-2.4.2-2
+               xorg-xkbcomp-1.4.3-1  zsh-5.8-1
+
+Total Installed Size:  4205.15 MiB
+Net Upgrade Size:        25.68 MiB
+
+:: Proceed with installation? [Y/n] 
+(177/177) checking keys in keyring                 [######################] 100%
+(177/177) checking package integrity               [######################] 100%
+(177/177) loading package files                    [######################] 100%
+(177/177) checking for file conflicts              [######################] 100%
+(178/178) checking available disk space            [######################] 100%
+:: Running pre-transaction hooks...
+(1/4) Removing linux initcpios...
+(2/4) Remove Firefox Distribution Settings
+(3/4) Save Linux kernel modules
+(4/4) Remove Thunderbird Distribution Settings
+:: Processing package changes...
+(1/1) removing alacritty-terminfo                  [######################] 100%
+(  1/177) upgrading linux-api-headers              [######################] 100%
+(  2/177) upgrading glibc                          [######################] 100%
+warning: /etc/locale.gen installed as /etc/locale.gen.pacnew
+Generating locales...
+  en_US.UTF-8... done
+Generation complete.
+(  3/177) upgrading gcc-libs                       [######################] 100%
+(  4/177) upgrading ncurses                        [######################] 100%
+(  5/177) upgrading alsa-topology-conf             [######################] 100%
+(  6/177) upgrading alsa-ucm-conf                  [######################] 100%
+(  7/177) upgrading alsa-lib                       [######################] 100%
+(  8/177) upgrading alsa-oss                       [######################] 100%
+(  9/177) upgrading alsa-plugins                   [######################] 100%
+New optional dependencies for alsa-plugins
+    dbus: for maemo plugin [installed]
+    jack: for pcm_jack plugin [installed]
+    libavtp: for pcm_aaf plugin
+    libpulse: for conf_pulse, ctl_pulse and pcm_pulse plugins [installed]
+    libsamplerate: for rate_samplerate plugin [installed]
+    speexdsp: for pcm_speex and rate_speexrate plugins [installed]
+( 10/177) upgrading hwids                          [######################] 100%
+( 11/177) upgrading bashrc-manjaro                 [######################] 100%
+( 12/177) upgrading readline                       [######################] 100%
+( 13/177) upgrading bash                           [######################] 100%
+( 14/177) upgrading alsa-utils                     [######################] 100%
+New optional dependencies for alsa-utils
+    fftw: for alsabat [installed]
+( 15/177) upgrading aom                            [######################] 100%
+( 16/177) upgrading glib2                          [######################] 100%
+( 17/177) upgrading gdk-pixbuf2                    [######################] 100%
+( 18/177) upgrading pango                          [######################] 100%
+( 19/177) upgrading wayland                        [######################] 100%
+( 20/177) upgrading desktop-file-utils             [######################] 100%
+( 21/177) upgrading mesa                           [######################] 100%
+( 22/177) upgrading gtk-update-icon-cache          [######################] 100%
+( 23/177) upgrading libcap                         [######################] 100%
+( 24/177) upgrading libgpg-error                   [######################] 100%
+( 25/177) upgrading libldap                        [######################] 100%
+( 26/177) upgrading js60                           [######################] 100%
+( 27/177) upgrading gmp                            [######################] 100%
+( 28/177) upgrading polkit                         [######################] 100%
+( 29/177) upgrading libgusb                        [######################] 100%
+( 30/177) upgrading libtool                        [######################] 100%
+( 31/177) upgrading avahi                          [######################] 100%
+New optional dependencies for avahi
+    libevent: libevent bindings [installed]
+    python-dbus: avahi-bookmarks, avahi-discover [installed]
+    python-gobject: avahi-bookmarks, avahi-discover [installed]
+    python-twisted: avahi-bookmarks
+( 32/177) upgrading gtk3                           [######################] 100%
+( 33/177) upgrading libarchive                     [######################] 100%
+( 34/177) upgrading ca-certificates-mozilla        [######################] 100%
+( 35/177) upgrading python-idna                    [######################] 100%
+( 36/177) upgrading python-packaging               [######################] 100%
+( 37/177) upgrading python-setuptools              [######################] 100%
+( 38/177) upgrading python-requests                [######################] 100%
+( 39/177) upgrading appstream-glib                 [######################] 100%
+( 40/177) upgrading nodejs                         [######################] 100%
+( 41/177) upgrading asar                           [######################] 100%
+( 42/177) upgrading audacity                       [######################] 100%
+( 43/177) upgrading autoconf                       [######################] 100%
+( 44/177) upgrading binutils                       [######################] 100%
+( 45/177) upgrading bison                          [######################] 100%
+( 46/177) upgrading bluez                          [######################] 100%
+( 47/177) upgrading bluez-libs                     [######################] 100%
+( 48/177) upgrading nss                            [######################] 100%
+( 49/177) upgrading ttf-liberation                 [######################] 100%
+( 50/177) upgrading brave                          [######################] 100%
+( 51/177) upgrading python-cairo                   [######################] 100%
+( 52/177) upgrading xdg-utils                      [######################] 100%
+( 53/177) upgrading catfish                        [######################] 100%
+( 54/177) upgrading libibus                        [######################] 100%
+( 55/177) upgrading ffmpeg                         [######################] 100%
+( 56/177) upgrading chromium                       [######################] 100%
+( 57/177) upgrading http-parser                    [######################] 100%
+( 58/177) upgrading code                           [######################] 100%
+( 59/177) upgrading cpupower                       [######################] 100%
+( 60/177) upgrading imagemagick                    [######################] 100%
+( 61/177) upgrading cups-filters                   [######################] 100%
+( 62/177) upgrading dhclient                       [######################] 100%
+( 63/177) upgrading electron                       [######################] 100%
+( 64/177) upgrading etcher                         [######################] 100%
+( 65/177) upgrading file-roller                    [######################] 100%
+( 66/177) upgrading firefox                        [######################] 100%
+( 67/177) upgrading pipewire                       [######################] 100%
+( 68/177) upgrading libmm-glib                     [######################] 100%
+( 69/177) upgrading gnome-desktop                  [######################] 100%
+( 70/177) upgrading flatpak                        [######################] 100%
+( 71/177) installing libinstpatch                  [######################] 100%
+( 72/177) upgrading fluidsynth                     [######################] 100%
+( 73/177) upgrading gcc                            [######################] 100%
+( 74/177) upgrading openexr                        [######################] 100%
+( 75/177) upgrading metis                          [######################] 100%
+( 76/177) upgrading suitesparse                    [######################] 100%
+( 77/177) upgrading gegl                           [######################] 100%
+( 78/177) upgrading gtk2                           [######################] 100%
+New optional dependencies for gtk2
+    python2: gtk-builder-convert [installed]
+( 79/177) upgrading gimp                           [######################] 100%
+( 80/177) upgrading git                            [######################] 100%
+( 81/177) upgrading glib2-docs                     [######################] 100%
+( 82/177) upgrading gptfdisk                       [######################] 100%
+( 83/177) upgrading libinput                       [######################] 100%
+( 84/177) upgrading md4c                           [######################] 100%
+( 85/177) upgrading qt5-base                       [######################] 100%
+( 86/177) upgrading openssh                        [######################] 100%
+New optional dependencies for openssh
+    libfido2: FIDO/U2F support
+( 87/177) upgrading libkate                        [######################] 100%
+( 88/177) upgrading gst-plugins-bad                [######################] 100%
+( 89/177) upgrading libbytesize                    [######################] 100%
+( 90/177) upgrading udisks2                        [######################] 100%
+( 91/177) upgrading gvfs                           [######################] 100%
+( 92/177) upgrading libusbmuxd                     [######################] 100%
+( 93/177) upgrading gvfs-afc                       [######################] 100%
+( 94/177) upgrading gvfs-gphoto2                   [######################] 100%
+( 95/177) upgrading gvfs-mtp                       [######################] 100%
+( 96/177) upgrading gvfs-nfs                       [######################] 100%
+( 97/177) upgrading gvfs-smb                       [######################] 100%
+( 98/177) upgrading signon-ui                      [######################] 100%
+( 99/177) upgrading kaccounts-integration          [######################] 100%
+(100/177) upgrading kernel-alive                   [######################] 100%
+(101/177) upgrading kitty-terminfo                 [######################] 100%
+(102/177) upgrading lib32-glibc                    [######################] 100%
+(103/177) upgrading lib32-alsa-lib                 [######################] 100%
+(104/177) upgrading lib32-alsa-oss                 [######################] 100%
+(105/177) upgrading lib32-alsa-plugins             [######################] 100%
+New optional dependencies for lib32-alsa-plugins
+    lib32-dbus: for maemo plugin [installed]
+    lib32-jack: for pcm_jack plugin [installed]
+    lib32-libavtp: for pcm_aaf plugin
+    lib32-libpulse: for conf_pulse, ctl_pulse and pcm_pulse plugins [installed]
+    lib32-libsamplerate: for rate_samplerate plugin [installed]
+    lib32-speexdsp: for pcm_speex and rate_speexrate plugins
+(106/177) upgrading lib32-gcc-libs                 [######################] 100%
+(107/177) upgrading lib32-glib2                    [######################] 100%
+(108/177) upgrading lib32-libsndfile               [######################] 100%
+(109/177) installing lib32-libinstpatch            [######################] 100%
+(110/177) upgrading lib32-icu                      [######################] 100%
+(111/177) upgrading lib32-wayland                  [######################] 100%
+(112/177) upgrading lib32-mesa                     [######################] 100%
+(113/177) upgrading lib32-fluidsynth               [######################] 100%
+(114/177) upgrading lib32-gnutls                   [######################] 100%
+(115/177) upgrading lib32-libxkbcommon             [######################] 100%
+(116/177) upgrading lib32-pango                    [######################] 100%
+(117/177) upgrading lib32-libgusb                  [######################] 100%
+(118/177) upgrading lib32-zstd                     [######################] 100%
+(119/177) upgrading lib32-libidn2                  [######################] 100%
+(120/177) upgrading lib32-gtk3                     [######################] 100%
+(121/177) upgrading lib32-libva-mesa-driver        [######################] 100%
+(122/177) upgrading lib32-mesa-vdpau               [######################] 100%
+(123/177) upgrading lib32-nss                      [######################] 100%
+(124/177) upgrading lib32-vulkan-intel             [######################] 100%
+(125/177) upgrading lib32-vulkan-radeon            [######################] 100%
+(126/177) upgrading libetonyek                     [######################] 100%
+(127/177) upgrading libgee                         [######################] 100%
+(128/177) upgrading libnm                          [######################] 100%
+(129/177) upgrading libquicktime                   [######################] 100%
+New optional dependencies for libquicktime
+    alsa-lib: for lqtplay [installed]
+    faac: for lqt_faac plugin [installed]
+    ffmpeg: for lqt_ffmpeg plugin [installed]
+    gtk2: for libquicktime_config [installed]
+    lame: for lqt_lame plugin [installed]
+    libdv: for lqt_dv plugin [installed]
+    libglvnd: for lqtplay [installed]
+    libjpeg-turbo: for lqt_mjpeg plugin [installed]
+    libpng: for lqt_png plugin [installed]
+    libvorbis: for lqt_lame and lqt_vorbis plugin [installed]
+    libx11: for lqtplay [installed]
+    libxaw: for lqtplay [installed]
+    libxext: for lqtplay [installed]
+    libxt: for lqtplay [installed]
+    libxv: for lqtplay [installed]
+    schroedinger: for lqt_schroedinger plugin [installed]
+    sndio: for lqtplay
+    x264: for lqt_x264 plugin [installed]
+(130/177) upgrading libreoffice-still              [######################] 100%
+(131/177) upgrading libusb-compat                  [######################] 100%
+(132/177) upgrading libva-mesa-driver              [######################] 100%
+(133/177) upgrading libwnck3                       [######################] 100%
+(134/177) upgrading light-locker                   [######################] 100%
+New optional dependencies for light-locker
+    upower: Power management support [installed]
+(135/177) upgrading linux-firmware                 [######################] 100%
+(136/177) upgrading linux54                        [######################] 100%
+(137/177) upgrading lua                            [######################] 100%
+(138/177) upgrading man-pages                      [######################] 100%
+(139/177) upgrading manjaro-release                [######################] 100%
+(140/177) upgrading mesa-vdpau                     [######################] 100%
+(141/177) upgrading mlt                            [######################] 100%
+New optional dependencies for mlt
+    python: python bindings [installed]
+    rubberband: rubberband plugin
+(142/177) upgrading modemmanager                   [######################] 100%
+(143/177) upgrading nano                           [######################] 100%
+(144/177) upgrading networkmanager                 [######################] 100%
+(145/177) upgrading nfsidmap                       [######################] 100%
+(146/177) upgrading nfs-utils                      [######################] 100%
+(147/177) upgrading semver                         [######################] 100%
+(148/177) upgrading npm                            [######################] 100%
+(149/177) upgrading ntfs-3g                        [######################] 100%
+(150/177) upgrading ntp                            [######################] 100%
+(151/177) upgrading opera-ffmpeg-codecs            [######################] 100%
+(152/177) upgrading perl-path-tiny                 [######################] 100%
+(153/177) upgrading perl-alien-build               [######################] 100%
+(154/177) upgrading perl-http-daemon               [######################] 100%
+(155/177) upgrading perl-xml-parser                [######################] 100%
+(156/177) upgrading protobuf                       [######################] 100%
+(157/177) upgrading protobuf-c                     [######################] 100%
+(158/177) upgrading python-lxml                    [######################] 100%
+(159/177) upgrading python-more-itertools          [######################] 100%
+(160/177) installing python-toml                   [######################] 100%
+(161/177) upgrading python-pep517                  [######################] 100%
+(162/177) upgrading python-pip                     [######################] 100%
+(163/177) upgrading python-psutil                  [######################] 100%
+(164/177) upgrading python-zipp                    [######################] 100%
+(165/177) upgrading python2-psutil                 [######################] 100%
+(166/177) upgrading snapd                          [######################] 100%
+(167/177) upgrading thunderbird                    [######################] 100%
+(168/177) upgrading timeshift                      [######################] 100%
+==> Attempting to enable Cronie services...
+==> Attempting to enable Cronie services...
+(169/177) upgrading vlc                            [######################] 100%
+(170/177) upgrading vulkan-intel                   [######################] 100%
+(171/177) upgrading vulkan-radeon                  [######################] 100%
+(172/177) upgrading wpebackend-fdo                 [######################] 100%
+(173/177) upgrading webkit2gtk                     [######################] 100%
+(174/177) upgrading xfce4-weather-plugin           [######################] 100%
+(175/177) upgrading xfce4-whiskermenu-plugin       [######################] 100%
+(176/177) upgrading xorg-xkbcomp                   [######################] 100%
+(177/177) upgrading zsh                            [######################] 100%
+:: Running post-transaction hooks...
+( 1/30) Creating system user accounts...
+( 2/30) Reloading system manager configuration...
+( 3/30) Creating temporary files...
+( 4/30) Reloading device manager configuration...
+( 5/30) Arming ConditionNeedsUpdate...
+( 6/30) Updating module dependencies...
+( 7/30) Restarting cronie for libc upgrade...
+( 8/30) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux54.preset: 'default'
+  -> -k /boot/vmlinuz-5.4-x86_64 -c /etc/mkinitcpio.conf -g /boot/initramfs-5.4-x86_64.img
+==> Starting build: 5.4.22-1-MANJARO
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [filesystems]
+==> Generating module dependencies
+==> Creating gzip-compressed initcpio image: /boot/initramfs-5.4-x86_64.img
+==> Image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux54.preset: 'fallback'
+  -> -k /boot/vmlinuz-5.4-x86_64 -c /etc/mkinitcpio.conf -g /boot/initramfs-5.4-x86_64-fallback.img -S autodetect
+==> Starting build: 5.4.22-1-MANJARO
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [filesystems]
+==> Generating module dependencies
+==> Creating gzip-compressed initcpio image: /boot/initramfs-5.4-x86_64-fallback.img
+==> Image generation successful
+( 9/30) Updating Grub-Bootmenu
+Generating grub configuration file ...
+Found theme: /usr/share/grub/themes/manjaro/theme.txt
+Found linux image: /boot/vmlinuz-5.4-x86_64
+Found initrd image: /boot/intel-ucode.img /boot/initramfs-5.4-x86_64.img
+Found initrd fallback image: /boot/initramfs-5.4-x86_64-fallback.img
+Found Windows Boot Manager on /dev/sda2@/EFI/Microsoft/Boot/bootmgfw.efi
+Found memtest86+ image: /boot/memtest86+/memtest.bin
+done
+(10/30) Reloading system bus configuration...
+(11/30) Warn about old perl modules
+(12/30) Copy Firefox Distribution Settings
+(13/30) Updating fontconfig cache...
+(14/30) Updating 32-bit fontconfig cache...
+(15/30) Probing GDK-Pixbuf loader modules...
+(16/30) Updating GIO module cache...
+(17/30) Compiling GSettings XML schema files...
+(18/30) Probing GTK2 input method modules...
+(19/30) Probing GTK3 input method modules...
+(20/30) Probing 32-bit GTK3 input method modules...
+(21/30) Updating icon theme caches...
+(22/30) Reloading GVFS config...
+(23/30) Restore Linux kernel modules
+
+==> Warning:
+	 -> Kernel has been updated. Modules of the current kernel
+	 -> have been backed up so you can continue to use your
+	 -> computer. However, the new kernel will only work 
+	 -> at next boot.
+	
+	
+(24/30) Updating the info directory file...
+(25/30) Copy Thunderbird Distribution Settings
+(26/30) Rebuilding certificate stores...
+(27/30) Updating the desktop file MIME type cache...
+(28/30) Updating the MIME type database...
+(29/30) Updating the vlc plugin cache...
+(30/30) Updating X fontdir indices...
+[suchithsridhar@suchithsridhar-pc ~]$ 
+

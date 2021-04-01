@@ -1,0 +1,80 @@
+This is a solution to using 2 different operating systems but wanting to use the same set of folders
+
+firstly this is how I've parted my drive which is 512GB
+
+Windows OS - 120GB (NTFS)
+Linux OS - 120GB (EXT4)
+Suchi DRV - Rest of the space (NTFS) (For compatabitly with windows)
+
+So now the idea is that both linux and windows use the same Suchi DRV partition to save all the data.
+But that said I didn't want to manually move files into this partition so this is how to set is so that
+your home folder in linux is based in this new partition.
+
+Firstly you want to auto mount this partition on linux
+so for that we need to edit a file "/etc/fstab"
+
+Let's get info about our partition:
+$ sudo blkid
+/dev/nvme0n1p1: UUID="CC9B-1F3E" BLOCK_SIZE="512" TYPE="vfat" PARTLABEL="EFI system partition" PARTUUID="0bdbfb7d-8280-4a52-908f-5dc610b77c4e"
+/dev/nvme0n1p2: PARTLABEL="Microsoft reserved partition" PARTUUID="8c1df372-fa2d-4519-8be6-a9e52cbb5780"
+/dev/nvme0n1p3: BLOCK_SIZE="512" UUID="6AEC9DB4EC9D7B51" TYPE="ntfs" PARTLABEL="Basic data partition" PARTUUID="76dc7d96-8824-4f9b-b4e7-7a25c86ae015"
+/dev/nvme0n1p4: LABEL="Suchi" BLOCK_SIZE="512" UUID="8E56F13A56F1241D" TYPE="ntfs" PARTLABEL="Basic data partition" PARTUUID="1948375c-170f-4a20-ae4f-d99fd96cd4f3"
+/dev/nvme0n1p5: BLOCK_SIZE="512" UUID="74FAD0BDFAD07CB4" TYPE="ntfs" PARTUUID="79d78f1d-5e3b-4744-95ba-04e2f63eddee"
+/dev/nvme0n1p6: UUID="a22ca60f-d059-4fe5-bd78-589430cda2e0" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="177e0bb7-12f3-ac44-a3cd-7862c684eed6"
+
+the import parts of this is the UUID
+
+now let's create a place to mount our partition. Usually any mounting is done in the /mnt folder
+so I'm going to create a folder to mount my partition there
+$ sudo mkdir /mnt/Suchi
+
+(fstab = file system table)
+now let's edit /etc/fstab
+you need to add a line in the end that looks like this:
+
+UUID=8E56F13A56F1241D	/mnt/Suchi	ntfs	defaults	0	2
+
+note that these are seperated by tabs.
+its in this format:
+UUID=<your uuid> <your mount point> <file system type> <options> <dump> <pass>
+
+the options is set to default to signify that all users have permission to access this folder.
+once that's done you've successfully mounted the partition onto your file system.
+
+Now let's create links for your home directory.
+(clear out you home directory since we'll be linking all the folders to the folders in the Suchi DRV)
+
+so Suchi DRV looks like this:
+Suchi DRV
+├── Suchi
+    ├── Documents
+    ├── Downloads
+    ├── Music
+    ├── Pictures
+    ├── Programming
+    ├── Public
+    └── Videos
+
+and my home folder is empty
+so i run this for loop:
+
+for i in Documents Downloads Music Programming Public Videos
+do
+ln -s /mnt/Suchi/Suchi/$i $i
+done
+
+So what is basically does is create a symbolic link to the actually directories but for
+all purposes they behave like real directories. You can cd into them you can do anything you want with them
+and it updates the actual directory too.
+
+So that solves our problem for linux. We can use linux download files from the browser and it will
+be automatically updated in the Suchi DRV which uses NTFS.
+
+Now if you want to use the same pictures and videos folders for windows to you just have to create the same
+symbolic links in the windows to these folders and then you wont be able to tell the difference. But for my
+case I just wanted to be able to access these files and folders from windows and I for the most part won't
+create files in windows and even if I do I can access them in linux anyway so I'm not going to create
+symbolic links for the folders in windows.
+
+If you are interested in creating symbolic links in windows then you can checkout this website:
+https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/

@@ -1,0 +1,8 @@
+Terminal Apps
+
+=> cmus - Music Player
+=> ranger - File Browser
+=> lynx - Web Browser
+=> w3m - Web Browser
+=> calcurse - ToDolist
+=> neomutt - mailing client

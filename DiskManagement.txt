@@ -1,0 +1,37 @@
+Disk Management For Linux
+
+In windows open the disk manager
+
+- To install Linux:
+
+Shrink one of the disks to make space for your linux system.
+Then create a new volume and format it into Ext4 using a
+3rd party application. Do this to prevent windows trying to access
+the drive.
+
+- To uninstall Linux:
+
+- Format the partition using any application.
+- Open CMD as admin and run the following commands
+
+Diskpart
+list vol
+select vol {volume number}
+(The volume number that of one usually formated in FAT32 and called something like SYS_DISK)
+assign letter=Z
+exit
+Z:
+cd EFI
+dir
+rd {Name of Folder with Linux Disto name} /s
+
+Diskpart
+list vol
+select vol {vol no.}
+remove letter=Z
+exit
+
+# If you see the linux drive listed in file explorer then
+diskpart and select the corresponding volume and remove the
+letter assigned to it.
+

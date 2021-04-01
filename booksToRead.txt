@@ -1,0 +1,29 @@
+- Kotlin
+Kotlin for Andriod Developers
+
+- R
+The book of R
+learn R programming in 1 day
+
+- JavaScript
+JavaScript & JQuery: Interactive Front-end web development
+JavaScript: The definitive guide
+Programming JavaScript Applications: Robust web Architecture with
+    node, HTML5 and moderns JS Libraries
+
+- Python
+Introduction to Machine learning with python: A guide for data
+    scientists
+Fluent Python: clear, concise and effective programming
+python cookbook: recipes for mastering python 3
+programmming python: powerful object oriented programming
+Test-driven development with python
+
+- Go
+The Go programming Language
+Learning Functional Programming in Go
+Concurrency in Go
+
+- C
+Head First C
+Learn C the hard way

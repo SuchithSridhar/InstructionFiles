@@ -1,0 +1,101 @@
+- Day 1:
+I researched about Linux and what distros really mean and what I need to do
+to download linux and how to make it work without causing any harm to my
+current setup.
+
+I found out that Manjaro was a distro that I liked the look of and I remembered that akshat also uses Manjaro as his daily driver.
+I didn't want to use Manjaro just because Akshat used it too so I look at a few more distros like Ubuntu (which seems a lot more popular than manjaro) but i didnt like the look of it. It has that android feel to it which i didnt not enjoy.
+
+I was watching a youtube video that gave me 2 great websites to test and search new distros: distrowatch.com for looking at different distros and distrotest.net where i could test distros and how they feel.
+That didnt work out too well for me though cause it was way too laggy for me to do any kind of real try on it.
+So i decided that i would have to download/install the thing to test it.
+
+I knew that i could install the OS onto a USB so that's what i wanted to try first since i was still sceptical about linux.
+So i followed a youtube video that taught me how to do exactly that but except that it was showing me how to do Ubuntu but i was smart enough to do Manjaro based on that instead.
+
+So the dude asked me to download this .exe file called Rufus and then the .iso file from the ofdfical website which then i has to "put" into the usb using the application. I did that. Now he asked me to start my computer and while that was happening press F10 or F2 ... Well none of that actually worked for me and my laptop kept booting into Windows.
+
+Ok so now i had to figure out how to open that boot screen that ive seen come on in many of linus Tech Tips videos but never figured out how to do it myself. I just did a quick google on how to open boot options for my specific laptop and boom! There was a button in the side of the laptop which i never knew what it was for and never realised that it was something realted to booting since it has this weird headphones like symbol on it.
+
+So now i open the boot and i try booting into the usb that i just "flashed" (didnt know it was called that back then). It threw an Error. Windows secure boot restriction or something along those lines. So i had to google that now. Turns out that by default "secure boot" is on which does not allow some random usb to boot onto the computer but i had to go into the bootloader menu and set it off.
+
+So after like a million restarts just because i didnt know how to do it properly I had my computer running Manjaro (or so i thought). As soon as manjaro came up it opened this installation screen but then i was allowed to close it. I soon learned that what i had "booted" was actually just a "live usb" and i still didnt actually have the operating system.
+
+I tried to install it onto my usb itself but that didnt show up in the options and only my hard disk was there. I was not going to risk installing linux as a dual boot just yet.
+
+I created another live usb for Ubuntu just to try it out since I wanted a first hand experience of what its like before i decided its not for me. And it was not. It had slow animations and a beginner like interface which i didnt like. I prefered the windows kind of desktop for my use.
+
+So now i had 2 usbs with live versions of ubuntu and manjaro, all that was left was to learn how to install it onto my computer and make the dream work.
+
+- Day 2:
+I researched a lot about linux. I watched a bunch of youtube videos which explained the bootloader, the kernel, the command line and all the other things which was good information. I was feeling much more confident about the whole thing now and i really wanted to try linux for myself since it seemed very appealing to me.
+
+I learnt how to create partitions in the drive and how to use all that fancy stuff to dual boot linux.
+
+- Day 3:
+So i was talking to Akshat and i decided that i would try it today. Somehow my very smart brain thought of installing the Manjaro in one of the live USB's to another USB that has a huge 32GB storage capacity. I dont know why i decided to plug both of the usbs into the computer at once but that what i did and it worked! The other usb showed up as a possible place to install manjaro! So i tried doing that, however, It got stuck at 24% and i was doing this when i didnt have a lot of time. I googled that my installtion was stuck and someone else had the same problem with XFCE and they said they didnt have this problem with the other versions.
+
+I was convinced that the problem was that i was using XFCE and that for whatever issue i was unable to install it. I, at the time, thought that XFCE and KDE plasma were VERY similar to each other, however, when i searched the KDE version of Manjaro it was not what i wanted. It had a completely different feel and felt no where as modern as XFCE.
+
+I was unable to find a solution to this problem i was having. After a bit of googling i learnt that i was supposed to check the sha1 hash and compare to what was on the website to make sure that i got exactly what they were giving. So using a webiste i compared the file that i downloaded 2 days ago with the hash that was on the website today and they didnt match. I was not stupid though, I knew that it was probabal that it was just that the sha1 hash changed since they might had changed the file on the website.
+
+So i downloaded the new Manjaro XFCE, this time keeping note of the hash as soon as i downloaded the file, i compared it, it matched! So now i had to do everything all over again. I flashed both my 32GB pendrive and my 8GB original pendrive just incase that the reason it failed the last time was that i was not using the same usb.
+
+So i tried it with the same usb this time, as in, i wanted to install manjaro onto the same usb that i had falshed it into. This time i used another program to flash it, Etcher, since i saw that this was a more recent version and it looked more modern and many people suggested that i use it.
+
+It didnt show up... I had to go format the drive and then delete the partitions on the live usb then format it again and blah blah I had to restart windows so many times cause i had to keep tweaking things till it worked.
+
+So now i was back to the same setup i had in the start. I had a usb which i had flashed my manjaro to and i had another empty usb which manjaro recognised as a potential space for it to install its OS.
+
+I tried it again, no avail, it was stuck on 25% this time around. I though of a last ditch effort and put it to install and just went to sleep hoping that the 25% would change.
+
+- Day 3:
+I got up at 4ish since i had left the computer on and i had to attend to it before dad got to it cause if dad got to it before i did, that would be bad news for me.
+
+I got to the computer and... BOOM !! THE INSTALLTION IS COMPLETE !!!!!!!!! I was so freaking excited at that moment ! It asked me for a restart and BOOM it pulled up a boot menu and asked me if i wanted to boot into manjaro or windows !!!!!! I was  so freaking happy at this point. I set up my account and now my manjaro was working perfectly ! Everything was not fine just yet. I had to make sure that i could boot into windows without and problem and that this had not affected anything else. I booted up windows and BOOM!!! IT works like a charm ! I was so excited and relieved at the same time. I just intalled an entire OS onto a usb.
+
+I customized my desktop quite a bit and googled a couple of things. I noted all the changes i made to it since i would eventually get it onto an acutal computer and i would need to know all the changes that i made so that i could set up my other thing exactly how i want it. IT takes a lot of googling to find out how to do things on linux.
+
+Here are a couple of things in linux, Manjaro that are just annoying as a first timer.
+- The super annoying beep that you get when you press backspace where there are no character (changed it now).
+- The setting are scattered across so many different "applications" or "managers" that its super annoying to find the setting that i want to change.
+Eg: Setting Editor, Setting manager, Manjaro Settings, Display settings, Appearence.
+Im just breaking my head like: why not put ALL of this under "Setting" and then you can create sub categories in there so that the search at the top can search all these for what im looking for.
+
+And now im typing this so that some future date when someone asks me how to install linux i can see what all i did before i can tell them what to do.
+
+Its surprisingly not that hard. ESPECIALLY if you just do your research and understand what youre doing.
+
+
+- Day 4:
+I decided to dual boot linux onto my hard drive this time. No more
+having to put in a usb and no more super slow system due to that.
+SO... I create a partition, formatted in NTFS, and plugged in the
+live USB and selected the partition to install manjaro onto.
+It did it successfully. However during the update of 
+the applications something went wrong and the system wouldn't boot.
+SOooooo I had to uninstall Manjaro and then install it again but this time
+I did a youtube search on what i have to do to make sure nothing goes wrong.
+I did the long ass procedure to uninstall and then installed it again and
+then i got it working perfectly! I updated it and then installed all the
+applications i wanted to and all that good stuff.
+Everything was working fine and then... I happened to boot windows just
+to check if that still works perfectly.
+I accidently clicked on the "Linux Drive" that i had installed
+linux on and it was technically empty. When i tried to boot linux
+again... IT didnt boot, it said that the system file was NTFS now
+linux OS can not boot from that! Windows changed the file system 
+without asking me !!!!! WTH !!! I had to do everthing all over
+again.
+Something to note is that fact that working with printers in linux
+can be super annoying sometimes.
+
+- Day 5
+I've tried a couple of terminals, such as, terminator, kitty, alacritty
+and one other, and different terminal customizer thingies like powerline.
+But at the end of the day, I removed all of that and literally went back
+to the default terminal, even the color.
+
+Oh I also tried out this super cool thing called cmatrix, I saw a youtuber use
+it and I was so amazed that I also downloaded it... It is super cool XD.
+You should totally try it out.

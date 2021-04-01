@@ -1,0 +1,52 @@
+==== Printing on Linux ====
+
+I have a samsung_m2020_series printer and since this is not an hp printer you
+have to go to the samsung webiste and download the linux drivers for the device
+I got the drivers from this link:
+https://www.driversamsung.com/samsung-m2020-download-driver/
+
+This downloads an archived file which when you unarchive you can navigate inside
+to find an install script. All you have to do is run this install script and you're
+done.
+
+Once this is set up you need to have cups running in the background.
+Cups by default is launched on port 631. So going to localhost:631 should show you
+the cups web interface. Go through the process and add a printer there and select
+the right drivers and etc.
+
+Once the printer is set up you can directly ctrl-p from a pdf viewer or whatever and
+it should print it for you.
+
+CLI OPTIONS:
+
+lp -P page-nums -o options=value -n num-of-copies
+example:
+lp -P 1-2,5-7,9 -o fit-to-page -n 2
+
+lpstat -a
+lpoptions
+lpq
+lpr
+
+lpr - for printing with non default printers
+lpr -P printer_name filename.txt
+
+# set default printer with this command
+lpoptions -d <Printer-Name>
+
+
+==== Scanning on Linux ====
+
+Since I have an hp scanner its easier for me to scan things since manjaro comes built-in
+with hp-device drivers.
+
+so I just run the commands:
+hp-scan --mode=color
+
+and that takes care of scanning for me
+
+ps. if I want to scan multiple things:
+for i in {1..6}; do hp-scan --mode=color; done;
+That will run the scanner 6 times one after the other.
+
+do run man hp-scan or hp-scan --help for more options

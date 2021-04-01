@@ -1,0 +1,17 @@
+optimus-manager used to switch between nvidia and intel
+
+command:
+optimus-manager --switch nvidia
+options: nvidia, intel, hybrid, integrated
+
+user config file:
+/etc/optimus-manager/optimus-manager.conf
+
+default config file:
+/usr/share/optimus-manager.conf
+
+for startup:
+```
+[optimus]
+startup_mode = nvidia
+```

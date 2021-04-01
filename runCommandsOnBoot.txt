@@ -1,0 +1,27 @@
+First create a systemd service:
+
+```
+/etc/systemd/system/onBoot.service
+[Unit]
+Description=Set max charge of computer to 60
+
+[Service]
+ExecStart=/usr/bin/max-charge.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Once that is done you can create the script
+which will be called by the ExecStart.
+
+```
+/usr/bin/max-charge.sh
+
+#!/bin/sh
+echo 60 | tee /sys/class/power_supply/BAT0/charge_control_end_threshold
+```
+
+Once that is done you can mark this file
+as an executable and you're all set to go
+

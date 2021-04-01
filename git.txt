@@ -1,0 +1,51 @@
+
+`git init`
+
+`git status`
+
+`git add <file>`
+
+`git commit -m "Stated working"`
+> sets it to clean status.
+
+`git log`
+> All snapshots taken and associated with UUID and Author and etc
+
+`git checkout <UUID>`
+> Revert back to a commit using a brach setting
+> The UUID is the id of the commit
+
+`git checkout master`
+> go back to the front of the tree
+
+
+
+
+
+
+## Backend
+
+git init 
+
+- Non assined area
+- Staging Area Object
+- Commits
+
+
+The add command moves a file to the staging area.
+the commit command creates an object and all the information in the
+staging area is stored in the commit. (Git commit also stores the meta
+data). 2 pointers master and HEAD that point to this commit.
+
+step 1: copy the prev commit.
+step 2: the commit checks the staging area to figure out what changes
+need to be made to the commit.
+step 3: The master and the HEAD pointer point at the new commit.
+
+The master pointer points to the front of the master branch.
+
+While staging git checks the most recent commits to see if the added
+file has been modified, if not then it does not stage it.
+
+git checkout controls the HEAD pointer and just moves the head pointer
+to that commit.

@@ -1,0 +1,16 @@
+zip
+
+zip [options] zipfile.zip input1 input2 input3 ...
+
+zip -r zipfile.zip dirname - recurse into the directory
+zip -9 zipfile.zip input - heavy compression (0-9 compression options)
+
+
+tar
+
+tar -zcvf archive-name.tar.gz directory-name
+
+-z : Compress archive using gzip program in Linux or Unix
+-c : Create archive on Linux
+-v : Verbose i.e display progress while creating archive
+-f : Archive File name

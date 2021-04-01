@@ -1,0 +1,99 @@
+Ok so i wanted to install MxLinux since it uses apt instead of pacman like manjaro and every damn tutorial out there is based on apt.
+
+So… I tried using the MultiBootUsb Feature and getting the distro there but that didn't work and I had to create a seperate file for this distro.
+
+That point 1 for bad start.
+
+Then I launched the installer and I went through the options, there you get to a place where you have to choose the bootloader… I don't know why it would let you CHOOSE something like that but then after a quick google search out of
+
+Select boot method:
+(tick)Install GRUB for MX Linux and Windows
+Install on: mbr() pbr() esp(tick)
+System boot disk:[Drop down]
+- SYSTEM_DRV 260MB
+- EFI 		 3	MB
+
+I choose esp since the internet said it was the way to go and it was the default selected option. However… I didnt know about the System boot disk… I knew that the SYSTEM_DRV was a windows things and I didn't want this thing to touch it. I know that the other partition that was there was created by manjaro and i though that its better if i choose that. But once MX Linux was done installing it gave me an error that said:
+"grub installion failed, use grub rescue menu to repair the installtion"
+
+I have never been so glad to about a simple drop down choice.
+
+That said i almost gave up on install Mx Linux and decided to go back and install manjaro again. But in the last moment, I had an idea.
+
+I copied the entire SYSTEM_DRV to another partition in the gparted of the live version of Mx Linux and took photos of all its attributes (boot, hidden and esp). After this i was confident to hit that button to make it so that mx linux uses the SYSTEM_DRV partition. I swear this entire time there was sweat dripping down my butt so bad…
+
+The last few percentages 95, 96, 97, … my assmy clenching so hard XD BUT IT WORKED !!!!
+
+The explaination i give is like so:
+While i was trying to uninstall manjaro once when i accidently broke it i went into this partition and removed some text reguarding the boot loader and i think thats whats happened here. Mx linux was just trying to add that there so that the system would see the mx linux boot.
+
+Now… I need to change the system settings so that the computer directly boots into windows so that dad doesn't get mad at me so ima do that first.
+
+Its the same changes as last time but i added one more change this time:
+
+/etc/default/grub
+-------------------
+GRUB_DEFAULT=0
+GRUB_TIMEOUT=5
+
+# Uncomment to disable graphical terminal (grub-pc only)
+#GRUB_TERMINAL=console
+--------------------
+were changed to
+--------------------
+
+GRUB_DEFAULT="Windows Boot Manager (on /dev/sda2)"
+GRUB_TIMEOUT=1
+
+# Uncomment to disable graphical terminal (grub-pc only)
+GRUB_TERMINAL=console
+
+--------------------
+
+and then ofc the command:
+update-grub
+
+I changed the background of the greeter by maually editing files:
+
+etc/lightdm/lightdm-gtk-greeter.conf
+changed
+user-background = true
+
+I donwloaded Franz and Rambox which are messaging controling
+apps for linux, i got it for whatsapp.
+
+Ran 2 commands form ubunty forms to fix Franz and Rambox which basically
+owned and changed the attributed of a certain file.
+sudo chown root:$USER /opt/google/chrome/chrome-sandbox
+sudo chmod 4755 /opt/google/chrome/chrome-sandbox
+
+to fix the problem:
+FATAL:zygote_host_impl_linux.cc(138)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /opt/google/chrome/chrome-sandbox is owned by root and has mode 4755.
+
+The errors were similar to this however it was not the same, i changed
+/opt/google/chrome/chrome-sandbox with
+/opt/Franz/chrome-sandbox
+
+installed the applications:
+Rambox
+Discord
+VSCode
+Audacity
+SimpleScreenRecorder
+Kdenlive
+
+I also got a bash script on stackoverflow for running apps
+on startup and then moving them to a different workspace.
+OnStartup.sh, the first line is:#!/bin/bash
+It had a command wmctrl… which is the window manager control
+and its quite insightful.
+
+Set execute permission on your script:
+chmod +x script-name-here.sh
+To run your script, enter:
+./script-name-here.sh
+OR
+sh script-name-here.sh
+OR
+bash script-name-here.sh
+

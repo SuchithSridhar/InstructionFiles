@@ -1,0 +1,6 @@
+# Making a jar file
+javac -d . MyApp.java
+echo "Main-Class:  MyApp" > MANIFEST.MF
+jar cvmf MANIFEST.MF MyApp.jar MyApp.class
+java -jar MyApp.jar
+

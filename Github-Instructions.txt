@@ -1,0 +1,20 @@
+Method 1:
+- Create a repo on github
+- clone it using the ssh key from the repo
+	- git clone <url>
+	(This will create a directory which will contain
+	the cloned files and the .git folder)
+
+Method 2:
+- Create a repo on github
+- Go to you current folder with the code files
+- Initiate a git folder
+	- git init
+- link this git to the remote repo using
+	- git remote add origin <url>
+- pull the files from the remote repo
+	- git pull --allow-unrelated-histories origin master
+	(Will pull your README.md if you created it)
+- git add .
+- git commit -m ""
+- git push --set-upstream origin master

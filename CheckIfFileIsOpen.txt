@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if ![[`lsof -c appname | grep /absoulte/path/to/file`]]
+then
+    # this mean that the program has not opened that file
+fi
+
+$ lsof
+this shows all programs that have opened all files

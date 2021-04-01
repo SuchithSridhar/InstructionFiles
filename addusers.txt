@@ -1,0 +1,9 @@
+useradd <name of user>
+useradd -G <group_name>,<group_name2> <username>
+passwd <name of user>
+groups - list groups user belongs to
+groupadd <name of group>
+usermod -a -G <grp name> <username>
+usermod -a -G sudo geek - add geek to sudo
+
+userdel <username>

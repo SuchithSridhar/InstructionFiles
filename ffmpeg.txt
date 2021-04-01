@@ -1,0 +1,11 @@
+# Split the source file into seperate segments
+ffmpeg -i <input_file> -ss <timestamp> -to <timestamp> <output_file> \
+    -ss <timestamp> -t <timestamp> <output_file2>
+
+# List the files to combine
+ -- t.txt --
+file <output_file>
+file <output_file2>
+
+# combine the files
+ffmpeg -f concat -i t.txt -c copy test.mp4

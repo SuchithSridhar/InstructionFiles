@@ -1,0 +1,39 @@
+Setting up dual screens in Manjaro XFCE
+
+So first off all it depends on what kind of graphics card you use on your computer.
+This is just how to do it with the Nvidia graphics card. It's different for the other
+graphic cards.
+
+Firstly, run xrandr and check if your secondary display is connected. If it doesn't show up
+that means that your most probably using nvidia and intel hybrid graphics and you can't add
+displays when you do that.
+
+So we'll have to fix that first.
+
+First check if you have the right drivers insalled for nvidia:
+Manjaro Settings Manager > Hardware Configuration > video-hybrid-intel-nvidia-440xx-prime
+if you have that downloaded and running then you can install optimus-prime:
+You can find a guide on how to set up optimus-prime here - 
+https://forum.manjaro.org/t/guide-install-and-configure-optimus-manager-for-hybrid-gpu-setups-intel-nvidia/92196
+
+Once you have that installed you can enable optimus-prime to use nvidia on boot by adding this config file:
+default config: /usr/share/optimus-manager.conf (do not edit)
+user config: /etc/optimus-manager/optimus-manager.conf
+
+so add this in the user config file:
+[optimus]
+startup_mode=nvidia
+
+That will make it so that you'll start with nvidia each time you start using your pc
+
+Now to enable the display just run this command on startup:
+$ xrandr --auto --output <your-monitor-name> --mode <your-monitor-resolution> --right-of <your-primary-monitor>
+
+you can get your primary monitor and your secondary monitor by running the command:
+$ xrandr
+
+you get the resolution also there.
+an example command of xrandr:
+$ xrandr --auto --output HDMI-0 --primary --mode 1600x900 --left-of eDP-1-1
+
+you can add the primary flag if you want to make your secondary display your main display.

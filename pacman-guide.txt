@@ -1,0 +1,23 @@
+pacman -S {pkg} - install pkg
+pacman -Ss {pkg} - search remote for pkg
+pacman -Sy - Sync remote and local repos
+pacman -Su - update local repos
+pacman -Syyuw - Download packages but don't install
+pacman -Sc - clear out cache of old packages
+
+pacman -R {pkg} - remove pkg
+pacman -Rs {pkg} - remove pkg and dependencies
+pacman -Rns {pkg} - remove pkg, dep, sys confs
+
+pacman -Q - list all packages on local repo
+pacman -Qs {pkg} - search local repo for pkg
+pacman -Qe - list all explicitly install packages
+pacman -Qeq - Qe without version (quite)
+pacman -Qn - list pkgs only from main repo
+pacman -Qm - list pkgs only from aur
+pacman -Qdt - list orphaned dependencies
+
+
+Pacman conf: /etc/pacman.conf
+Pacman mirror list: /etc/pacman.d/mirrorlist
+

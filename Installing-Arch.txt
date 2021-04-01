@@ -1,0 +1,88 @@
+--- Arch Linux Install ---
+
+wifi-menu (setup network, refer to other file)
+ping 8.8.8.8
+vi /etc/pacman.d/mirrorlist
+	# the mirrors on the top of the list are the ones that
+	# are checked first, comment unnessary
+pacman -Syyy (Sync mirrors)
+lsblk
+cfdisk /dev/nvme0n1 # The name of the disk - to create linux file system
+
+mkfs.ext4 /dev/nvme0n1p5
+mount /dev/nvme0n1p5 /mnt
+      # mount what   mount where
+
+mkdir /mnt/boot
+mount /dev/nvme0n1p2 /mnt/boot
+      # The boot partition  we are mounting it on /boot
+      # since /mnt is where the root filesystem is
+pacstrap /mnt base linux linux-firmware
+genfstab -U /mnt /mnt/etc/fstab
+arch-chroot /mnt
+
+# Creating the swap file
+fallocate -l 2GB /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+
+vi /etc/fstab
+	# write the line: /swapfile none swap defaults 0 0
+ln -sf /usr/share/zoneinfo/Asia/... /etc/localtime
+hwclock --systohc
+
+vi /etc/locale.gen
+# uncomment en_US.UTF-8
+locale-gen
+vi /etc/locale.conf
+# Write: LANG=en_US.UTF-8
+vi /etc/hostname
+# Write: suchi
+
+vi /etc/hosts
+	127.0.0.1	localhost
+	::1		localhost
+	127.0.1.1	suchi.localdomain	suchi
+passwd (create a password for root)
+
+# Boot Loader
+
+# Windows Dual Boot ----
+
+pacman -S grub efibootmgr networkmanager
+		network-manager-applet
+		dialog wireless-tools
+		wpa_supplicant os-prober
+		mtools dosfstools base-devel
+		linux-headers
+
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+
+mkdir /mnt/Windows10
+mount /dev/nvme0n1p4 /mnt/Windows10
+grub-mkconfig -o /boot/grub/grub.cfg
+
+exit
+unmount -a
+
+-- Restart --
+
+systemctl start NetworkManger
+nmtui
+systemctl enable NetworkManager
+systemctl enable PulseAudio (Install it first tho)
+
+useradd -m -G wheel Suchith
+passwd Suchith
+
+visudo
+# uncomment the wheels for all users line
+
+pacman -S xf86-video-intel
+	  xf86-video-amdgpu
+	  nvidia nvidia-utils
+
+pacman -S xorg lightdm
+systemctl enable lightdm
+reboot

@@ -1,0 +1,26 @@
+--- Windows 10 ---
+
+- Making space for linux -
+Power options: turn off fast startup
+Windows secure boot: off (Bios)
+Disk management - shrink partition
+
+- Removing linux -
+Disk management
+	delete partition
+CMD
+Diskpart
+list volume
+select vol 2 (The EFI partition)
+assign letter=Z
+exit
+
+cd Z:
+rm -R GRUB
+rm -R EFI/GRUB
+
+diskpart
+list volume
+select vol 2 (The EFI partition)
+remove letter=Z
+exit
