@@ -1,3 +1,8 @@
 yay -S mysql
 sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
+# To start it
+systemctl start mariadb.service
+
+# To auto-start each time computer restarts
+systemctl enable mariadb.service
