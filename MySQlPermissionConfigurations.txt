@@ -1,0 +1,9 @@
+# create the user
+create user 'suchi'@'localhost';
+create user 'suchi'@'localhost' identified by 'password';
+
+# Grant permissions to user
+GRANT ALL PRIVILEGES ON * . * TO 'suchi'@'localhost';
+
+# flush the privileges
+flush privileges;
